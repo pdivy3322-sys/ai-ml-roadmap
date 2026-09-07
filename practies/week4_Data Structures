@@ -1,34 +1,33 @@
-# # q=1
-# list = ["shiva","parvati","hanuman"]
-# # list2 = ["ram","sita","hanuman"]
-# # print(list[0])
-# # print(list2[0])
-# # list[1]="ram"
-# # print(list)
-# # #q=2
-# # list.append("sita")
-# # print(list)
-# # list.remove("hanuman")
-# # print(list)
-# list.insert(0,"krishna")
-# print(list)
-# list.pop(1)
-# print(list)
-#q=2
-# l = [8,5,3,2,5,7,1,50]
-# l.sort()
-# print(l)
-#q=3
-# l = [8,5,3,2,5,7,1,50]
-# l.sort(reverse=True)
-# print(l)
-#q=4
-# l = [8,5,3,2,5,7,1,50]
-# l.reverse()
-# print(l)
-#q=5
-# l = [8,5,3,2,5,7,1,50]
-# print(len(l))
-#q=6
-l = [8,5,3,2,5,7,1,50]
+list = ["shiva", "parvati", "hanuman"]
+list2 = ["ram", "sita", "hanuman"]
+print(list[0])
+print(list2[0])
+list[1] = "ram"
+print(list)
+
+list.append("sita")
+print(list)
+list.remove("hanuman")
+print(list)
+list.insert(0, "krishna")
+print(list)
+list.pop(1)
+print(list)
+
+l = [8, 5, 3, 2, 5, 7, 1, 50]
+l.sort()
+print(l)
+
+l = [8, 5, 3, 2, 5, 7, 1, 50]
+l.sort(reverse=True)
+print(l)
+
+l = [8, 5, 3, 2, 5, 7, 1, 50]
+l.reverse()
+print(l)
+
+l = [8, 5, 3, 2, 5, 7, 1, 50]
+print(len(l))
+
+l = [8, 5, 3, 2, 5, 7, 1, 50]
 print(l.count(8))
