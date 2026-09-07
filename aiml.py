@@ -1,0 +1,6 @@
+m =input("Enter the name:")
+print(m)
+n = int(input("Enter the age"))
+print(n+5)
+p = int(input("Enter the age"))
+print(n+p)
