@@ -1,33 +1,326 @@
-list = ["shiva", "parvati", "hanuman"]
-list2 = ["ram", "sita", "hanuman"]
-print(list[0])
-print(list2[0])
-list[1] = "ram"
-print(list)
+#PYTHON DATA STRUCTURES
+#LIST, SET AND DICTIONARY
+#LIST PRACTICALS
 
-list.append("sita")
-print(list)
-list.remove("hanuman")
-print(list)
-list.insert(0, "krishna")
-print(list)
-list.pop(1)
-print(list)
 
-l = [8, 5, 3, 2, 5, 7, 1, 50]
-l.sort()
-print(l)
+# Q1. Access and Update List
+# Aim: To access and update an element in a list.
+my_list = ["shiva", "parvati", "hanuman"]
 
-l = [8, 5, 3, 2, 5, 7, 1, 50]
-l.sort(reverse=True)
-print(l)
+print(my_list[0])
 
-l = [8, 5, 3, 2, 5, 7, 1, 50]
-l.reverse()
-print(l)
+my_list[1] = "ram"
+print(my_list)
 
-l = [8, 5, 3, 2, 5, 7, 1, 50]
-print(len(l))
 
-l = [8, 5, 3, 2, 5, 7, 1, 50]
-print(l.count(8))
+# Q2. Add Element using append()
+# Aim: To add an element at the end of a list.
+
+my_list.append("sita")
+print(my_list)
+
+
+# Q3. Remove Element using remove()
+# Aim: To remove a specific element from a list.
+
+my_list.remove("hanuman")
+print(my_list)
+
+
+# Q4. Insert Element using insert()
+# Aim: To insert an element at a specific position in a list.
+
+my_list.insert(0, "krishna")
+print(my_list)
+
+
+# Q5. Remove Element using pop()
+# Aim: To remove an element from a specific index of a list.
+
+my_list.pop(1)
+print(my_list)
+
+
+# Q6. Sort List in Ascending Order
+# Aim: To arrange the elements of a list in ascending order.
+
+numbers = [8, 5, 3, 2, 5, 7, 1, 50]
+
+numbers.sort()
+print(numbers)
+
+
+# Q7. Sort List in Descending Order
+# Aim: To arrange the elements of a list in descending order.
+
+numbers = [8, 5, 3, 2, 5, 7, 1, 50]
+
+numbers.sort(reverse=True)
+print(numbers)
+
+
+# Q8. Reverse List
+# Aim: To reverse the order of elements in a list.
+
+numbers = [8, 5, 3, 2, 5, 7, 1, 50]
+
+numbers.reverse()
+print(numbers)
+
+
+# Q9. Find Length of List
+# Aim: To find the total number of elements in a list.
+
+numbers = [8, 5, 3, 2, 5, 7, 1, 50]
+
+print(len(numbers))
+
+
+# Q10. Count an Element
+# Aim: To count the number of occurrences of an element in a list.
+
+numbers = [8, 5, 3, 2, 5, 7, 1, 50]
+
+print(numbers.count(5))
+
+
+# ============================================================
+#                         SET PRACTICALS
+# ============================================================
+
+
+# Q1. Create and Print a Set
+# Aim: To create a set and display its elements.
+
+numbers = {1, 2, 3, 4, 5}
+
+print(numbers)
+
+
+# Q2. Remove Duplicate Elements from a Set
+# Aim: To understand that a set automatically removes duplicate elements.
+
+numbers = {1, 2, 3, 3, 4, 5, 1}
+
+print(numbers)
+
+
+# Q3. Add an Element using add()
+# Aim: To add a new element to a set.
+
+numbers = {1, 2, 3, 4, 5}
+
+numbers.add(6)
+print(numbers)
+
+
+# Q4. Remove an Element using remove()
+# Aim: To remove a specific element from a set using remove().
+
+numbers = {1, 2, 3, 4, 5, 6}
+
+numbers.remove(6)
+print(numbers)
+
+
+# Q5. Remove an Element using discard()
+# Aim: To remove an element from a set using discard().
+
+numbers = {1, 2, 3, 4, 5}
+
+numbers.discard(3)
+print(numbers)
+
+
+# Q6. Remove an Element using pop()
+# Aim: To remove an arbitrary element from a set using pop().
+
+numbers = {1, 2, 3, 4, 5}
+
+numbers.pop()
+print(numbers)
+
+
+# Q7. Access Set Elements using a Loop
+# Aim: To iterate through and display all elements of a set.
+
+numbers = {1, 2, 3, 4}
+
+for i in numbers:
+    print(i)
+
+
+# Q8. Set Union, Intersection and Difference
+# Aim: To perform union, intersection and difference operations on sets.
+
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+
+print("Union:", set1 | set2)
+print("Intersection:", set1 & set2)
+print("Difference:", set1 - set2)
+
+
+
+#DICTIONARY PRACTICALS
+
+
+
+# Q1. Create and Print a Dictionary
+# Aim: To create a dictionary and display its key-value pairs.
+
+student = {
+    "name": "Rahul",
+    "age": 20,
+    "course": "Python"
+}
+
+print(student)
+
+
+# Q2. Access Value using Key
+# Aim: To access a value from a dictionary using its key.
+
+student = {
+    "name": "Rahul",
+    "age": 20,
+    "course": "Python"
+}
+
+print(student["name"])
+
+
+# Q3. Access Age using Key
+# Aim: To retrieve a specific value from a dictionary using its key.
+
+student = {
+    "name": "Rahul",
+    "age": 20,
+    "course": "Python"
+}
+
+print(student["age"])
+
+
+# Q4. Update a Dictionary Value
+# Aim: To update an existing value in a dictionary.
+
+student = {
+    "name": "Rahul",
+    "age": 20,
+    "course": "Python"
+}
+
+student["age"] = 21
+
+print(student)
+
+
+# Q5. Update and Add Elements using update()
+# Aim: To update an existing key and add a new key-value pair.
+
+student = {
+    "name": "Ram",
+    "age": 19,
+    "course": "CSE"
+}
+
+student.update({
+    "age": 20,
+    "city": "Mumbai"
+})
+
+print(student)
+
+
+# Q6. Remove an Element using pop()
+# Aim: To remove a specific key-value pair from a dictionary using pop().
+
+student = {
+    "name": "Rahul",
+    "age": 19,
+    "course": "Python"
+}
+
+student.pop("course")
+
+print(student)
+
+
+# Q7. Delete an Element using del
+# Aim: To delete a specific key-value pair from a dictionary using del.
+
+student = {
+    "name": "Rahul",
+    "age": 19,
+    "course": "Python"
+}
+
+del student["course"]
+
+print(student)
+
+
+# Q8. Clear a Dictionary
+# Aim: To remove all key-value pairs from a dictionary using clear().
+
+student = {
+    "name": "Rahul",
+    "age": 19,
+    "course": "Python"
+}
+
+student.clear()
+
+print(student)
+
+
+# Q9. Access Dictionary using a for Loop
+# Aim: To iterate through a dictionary and display its keys and values.
+
+student = {
+    "name": "Rahul",
+    "age": 19,
+    "course": "Python"
+}
+
+for key in student:
+    print(key, ":", student[key])
+
+
+# Q10. Access Dictionary Keys using keys()
+# Aim: To access and display all keys of a dictionary using keys().
+
+student = {
+    "name": "Rahul",
+    "age": 19,
+    "course": "Python"
+}
+
+for key in student.keys():
+    print(key, ":", student[key])
+
+
+# Q11. Access Dictionary Values using values()
+# Aim: To access and display all values of a dictionary using values().
+
+student = {
+    "name": "Rahul",
+    "age": 19,
+    "course": "Python"
+}
+
+for value in student.values():
+    print(value)
+
+
+# Q12. Access Dictionary Items using items()
+# Aim: To access and display all key-value pairs of a dictionary using items().
+
+student = {
+    "name": "Rahul",
+    "age": 19,
+    "course": "Python"
+}
+
+print(student.items())
