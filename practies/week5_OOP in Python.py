@@ -1,4 +1,3 @@
-```python
 """
 PYTHON OBJECT-ORIENTED PROGRAMMING (OOP)
 Week 5: OOP Practicals
