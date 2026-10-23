@@ -1,10 +1,22 @@
-#PYTHON DATA STRUCTURES
-#LIST, SET AND DICTIONARY
-#LIST PRACTICALS
+```python
+"""
+PYTHON DATA STRUCTURES
+Topic: List, Set, and Dictionary Practicals
+
+Description:
+This file contains beginner-friendly Python programs
+to understand and practice common data structure operations.
+"""
+
+
+# ============================================================
+#                     1. LIST PRACTICALS
+# ============================================================
 
 
 # Q1. Access and Update List
 # Aim: To access and update an element in a list.
+
 my_list = ["shiva", "parvati", "hanuman"]
 
 print(my_list[0])
@@ -28,21 +40,21 @@ print(my_list)
 
 
 # Q4. Insert Element using insert()
-# Aim: To insert an element at a specific position in a list.
+# Aim: To insert an element at a specific index in a list.
 
 my_list.insert(0, "krishna")
 print(my_list)
 
 
 # Q5. Remove Element using pop()
-# Aim: To remove an element from a specific index of a list.
+# Aim: To remove an element from a specific index in a list.
 
 my_list.pop(1)
 print(my_list)
 
 
 # Q6. Sort List in Ascending Order
-# Aim: To arrange the elements of a list in ascending order.
+# Aim: To arrange list elements in ascending order.
 
 numbers = [8, 5, 3, 2, 5, 7, 1, 50]
 
@@ -51,7 +63,7 @@ print(numbers)
 
 
 # Q7. Sort List in Descending Order
-# Aim: To arrange the elements of a list in descending order.
+# Aim: To arrange list elements in descending order.
 
 numbers = [8, 5, 3, 2, 5, 7, 1, 50]
 
@@ -59,7 +71,7 @@ numbers.sort(reverse=True)
 print(numbers)
 
 
-# Q8. Reverse List
+# Q8. Reverse a List
 # Aim: To reverse the order of elements in a list.
 
 numbers = [8, 5, 3, 2, 5, 7, 1, 50]
@@ -68,28 +80,28 @@ numbers.reverse()
 print(numbers)
 
 
-# Q9. Find Length of List
+# Q9. Find Length of a List
 # Aim: To find the total number of elements in a list.
 
 numbers = [8, 5, 3, 2, 5, 7, 1, 50]
 
-print(len(numbers))
+print("Length of list:", len(numbers))
 
 
-# Q10. Count an Element
-# Aim: To count the number of occurrences of an element in a list.
+# Q10. Count Occurrences of an Element
+# Aim: To count how many times an element appears in a list.
 
 numbers = [8, 5, 3, 2, 5, 7, 1, 50]
 
-print(numbers.count(5))
+print("Count of 5:", numbers.count(5))
 
 
 # ============================================================
-#                         SET PRACTICALS
+#                     2. SET PRACTICALS
 # ============================================================
 
 
-# Q1. Create and Print a Set
+# Q1. Create and Display a Set
 # Aim: To create a set and display its elements.
 
 numbers = {1, 2, 3, 4, 5}
@@ -97,8 +109,8 @@ numbers = {1, 2, 3, 4, 5}
 print(numbers)
 
 
-# Q2. Remove Duplicate Elements from a Set
-# Aim: To understand that a set automatically removes duplicate elements.
+# Q2. Remove Duplicate Elements
+# Aim: To understand how a set automatically removes duplicates.
 
 numbers = {1, 2, 3, 3, 4, 5, 1}
 
@@ -115,7 +127,7 @@ print(numbers)
 
 
 # Q4. Remove an Element using remove()
-# Aim: To remove a specific element from a set using remove().
+# Aim: To remove a specific element from a set.
 
 numbers = {1, 2, 3, 4, 5, 6}
 
@@ -133,7 +145,7 @@ print(numbers)
 
 
 # Q6. Remove an Element using pop()
-# Aim: To remove an arbitrary element from a set using pop().
+# Aim: To remove an arbitrary element from a set.
 
 numbers = {1, 2, 3, 4, 5}
 
@@ -141,17 +153,17 @@ numbers.pop()
 print(numbers)
 
 
-# Q7. Access Set Elements using a Loop
-# Aim: To iterate through and display all elements of a set.
+# Q7. Iterate Through a Set
+# Aim: To access and display set elements using a for loop.
 
 numbers = {1, 2, 3, 4}
 
-for i in numbers:
-    print(i)
+for number in numbers:
+    print(number)
 
 
-# Q8. Set Union, Intersection and Difference
-# Aim: To perform union, intersection and difference operations on sets.
+# Q8. Perform Set Operations
+# Aim: To perform union, intersection, and difference operations.
 
 set1 = {1, 2, 3}
 set2 = {3, 4, 5}
@@ -161,13 +173,13 @@ print("Intersection:", set1 & set2)
 print("Difference:", set1 - set2)
 
 
+# ============================================================
+#                  3. DICTIONARY PRACTICALS
+# ============================================================
 
-#DICTIONARY PRACTICALS
 
-
-
-# Q1. Create and Print a Dictionary
-# Aim: To create a dictionary and display its key-value pairs.
+# Q1. Create and Display a Dictionary
+# Aim: To create a dictionary containing key-value pairs.
 
 student = {
     "name": "Rahul",
@@ -178,8 +190,8 @@ student = {
 print(student)
 
 
-# Q2. Access Value using Key
-# Aim: To access a value from a dictionary using its key.
+# Q2. Access Value using a Key
+# Aim: To retrieve a student's name using its dictionary key.
 
 student = {
     "name": "Rahul",
@@ -190,8 +202,8 @@ student = {
 print(student["name"])
 
 
-# Q3. Access Age using Key
-# Aim: To retrieve a specific value from a dictionary using its key.
+# Q3. Access Age using a Key
+# Aim: To retrieve a student's age using its dictionary key.
 
 student = {
     "name": "Rahul",
@@ -212,11 +224,10 @@ student = {
 }
 
 student["age"] = 21
-
 print(student)
 
 
-# Q5. Update and Add Elements using update()
+# Q5. Add and Update Elements using update()
 # Aim: To update an existing key and add a new key-value pair.
 
 student = {
@@ -234,7 +245,7 @@ print(student)
 
 
 # Q6. Remove an Element using pop()
-# Aim: To remove a specific key-value pair from a dictionary using pop().
+# Aim: To remove a key-value pair using its key.
 
 student = {
     "name": "Rahul",
@@ -243,12 +254,11 @@ student = {
 }
 
 student.pop("course")
-
 print(student)
 
 
 # Q7. Delete an Element using del
-# Aim: To delete a specific key-value pair from a dictionary using del.
+# Aim: To delete a key-value pair using the del statement.
 
 student = {
     "name": "Rahul",
@@ -257,12 +267,11 @@ student = {
 }
 
 del student["course"]
-
 print(student)
 
 
 # Q8. Clear a Dictionary
-# Aim: To remove all key-value pairs from a dictionary using clear().
+# Aim: To remove all key-value pairs from a dictionary.
 
 student = {
     "name": "Rahul",
@@ -271,12 +280,11 @@ student = {
 }
 
 student.clear()
-
 print(student)
 
 
-# Q9. Access Dictionary using a for Loop
-# Aim: To iterate through a dictionary and display its keys and values.
+# Q9. Iterate Through a Dictionary
+# Aim: To display dictionary keys and their corresponding values.
 
 student = {
     "name": "Rahul",
@@ -289,7 +297,7 @@ for key in student:
 
 
 # Q10. Access Dictionary Keys using keys()
-# Aim: To access and display all keys of a dictionary using keys().
+# Aim: To retrieve and display all dictionary keys.
 
 student = {
     "name": "Rahul",
@@ -298,11 +306,11 @@ student = {
 }
 
 for key in student.keys():
-    print(key, ":", student[key])
+    print(key)
 
 
 # Q11. Access Dictionary Values using values()
-# Aim: To access and display all values of a dictionary using values().
+# Aim: To retrieve and display all dictionary values.
 
 student = {
     "name": "Rahul",
@@ -314,8 +322,8 @@ for value in student.values():
     print(value)
 
 
-# Q12. Access Dictionary Items using items()
-# Aim: To access and display all key-value pairs of a dictionary using items().
+# Q12. Access Key-Value Pairs using items()
+# Aim: To retrieve and display dictionary keys and values together.
 
 student = {
     "name": "Rahul",
@@ -323,4 +331,10 @@ student = {
     "course": "Python"
 }
 
-print(student.items())
+for key, value in student.items():
+    print(key, ":", value)
+
+
+# ============================================================
+#                       END OF FILE
+# ============================================================
